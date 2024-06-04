@@ -346,7 +346,7 @@ background-color: #f4f4fd;
 
 .command-title-icon {
         display: flex;
-        gap: 8px;
+        gap: 24px;
         justify-content: center;
         width: 232px;
         height: 40px;
@@ -375,7 +375,7 @@ background-color: #f4f4fd;
 
 .command-title-block:hover,
 .command-title-block:focus {
-        background-color: #31d0aa;
+        background-color: #404bbf;
 }
 
 .title-icon {
@@ -509,4 +509,9 @@ align-items: baseline;
 
 .footer-title-icon {
         gap: 16px;
+}
+
+.footer-title-block:hover,
+.footer-title-block:focus{
+        background-color: #31d0aa;
 }
