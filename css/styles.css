@@ -48,6 +48,9 @@ button{
 /* ------------------------------header----------------------------------------------- */
 .header{
       border-bottom: 1px solid #e7e9fc;
+      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
         }
 
 .header-container{
@@ -149,6 +152,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+max-width: 1440px;
 }
 
 .container-head-solution{
@@ -237,13 +241,16 @@ background-size: cover;
                 background: #f4f4fd;
                 position: relative;
                 margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 }
 
 .strategy-icon{
         position: absolute;
-                top: 50%;
+                /* top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); */
                 }
 
 .h3{
@@ -347,29 +354,32 @@ background-color: #f4f4fd;
 }
 
 .command-title-btn {
-        background-color: #4d5ae5;
         margin: 0 auto;
-        border-radius: 50%;
         border: none;
         width: 40px;
         height: 40px;
+        display: flex;
+        gap: 24px;
+}
+
+.command-title-block{
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command-title-btn:hover,
-.command-title-btn:focus {
+.command-title-block:hover,
+.command-title-block:focus {
         background-color: #31d0aa;
 }
 
-/* .command-title-btn:focus {
-        background-color: #31d0aa;
-} */
-
 .title-icon {
-        fill: #ffffff;
+        fill: #f4f4fd;
 }
 
 
@@ -404,7 +414,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 .about-container-item:hover .about-marketing-text{
-        transform: translateY(0);
+        transform: translateY(0%);
 }
 
 .command-name {
@@ -441,6 +451,7 @@ height: 120px;
                 color: #f4f4fd;
                 background-color: #4d5ae5;
                 height: 100%;
+                width: 100%;
                 padding: 40px 32px;
                 transform: translateY(100%);
                 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
@@ -455,6 +466,11 @@ padding: 100px 0;
 
 .container-footer{
 display: flex;
+align-items: baseline;
+}
+
+.container-footer-logo{
+        margin-right: 120px;
 }
 
 #logo-footer{
@@ -476,18 +492,21 @@ display: flex;
         color: #f4f4fd;
         background: #2e2f42;
         width: 264px;
-       }
+}
 
-       .sotial-footer{
+.sotial-footer{
         margin-left: 120px;
-        }
+}
 
-       .sotial-text-footer{
-        font-family: "Roboto", sans-serif;
+.sotial-text-footer{
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 150%;
                 letter-spacing: 0.02em;
-                color: #fff;
+                color: #ffffff;
                 margin-bottom: 16px;
-       }
+}
+
+.footer-title-icon {
+        gap: 16px;
+}
